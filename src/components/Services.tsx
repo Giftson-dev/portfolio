@@ -114,7 +114,7 @@ const Services = () => {
                   <div className={`${service.color} mb-4 transform group-hover:scale-110 transition-transform duration-300`}>
                     <IconComponent className="h-12 w-12" />
                   </div>
-                  <CardTitle className="text-xl text-white group-hover:text-gray-800">
+                  <CardTitle className="text-xl text-blue-500 group-hover:text-gray-800">
                     {service.title}
                   </CardTitle>
                 </CardHeader>

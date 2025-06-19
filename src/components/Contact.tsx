@@ -96,7 +96,7 @@ const Contact = () => {
           {/* Contact Form */}
           <Card className="shadow-lg">
             <CardHeader>
-              <CardTitle className="text-2xl text-blue-900">Send a Message</CardTitle>
+              <CardTitle className="text-2xl text-blue-500">Send a Message</CardTitle>
             </CardHeader>
             <CardContent>
               <form onSubmit={handleSubmit} className="space-y-6">
