@@ -39,11 +39,15 @@ const Hero = () => {
         <div className="mb-8 animate-fade-in relative">
           <div className="absolute inset-0 bg-gradient-to-r from-blue-600 via-purple-600 to-cyan-600 rounded-full blur-3xl opacity-30 scale-150 animate-pulse"></div>
           <div className="relative backdrop-blur-sm rounded-full p-6 border border-white/20 dark:border-gray-600/20 shadow-2xl">
-            <img 
-              src="/gift-uploads/gift.svg" 
-              alt="TheGiftson Logo" 
-              className="mx-auto h-32 md:h-40 w-auto drop-shadow-2xl"
-            />
+ <div className="flex justify-center w-full"> 
+  <img 
+    src="/favicon.png" 
+    alt="The Giftson Logo" 
+    className="h-32 md:h-48 w-auto transition-all duration-300 
+               brightness-0 
+               dark:brightness-0 dark:invert" 
+  />
+</div>
           </div>
         </div>
 

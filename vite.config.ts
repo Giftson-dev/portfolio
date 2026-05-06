@@ -16,4 +16,36 @@ export default defineConfig({
       "@": path.resolve(__dirname, "./src"),
     },
   },
+  build: {
+    minify: "esbuild",
+    esbuild: {
+      drop: ["console", "debugger"],
+    },
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          vendor: [
+            "react",
+            "react-dom",
+            "react-router-dom",
+            "@radix-ui/react-dialog",
+            "@radix-ui/react-dropdown-menu",
+          ],
+        },
+      },
+    },
+    chunkSizeWarningLimit: 1000,
+    cssCodeSplit: true,
+  },
+  optimize: {
+    deps: {
+      include: [
+        "react",
+        "react-dom",
+        "react-router-dom",
+        "@radix-ui/react-dialog",
+        "@radix-ui/react-dropdown-menu",
+      ],
+    },
+  },
 });

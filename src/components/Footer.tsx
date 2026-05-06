@@ -18,11 +18,11 @@ const Footer = () => {
       <div className="max-w-6xl mx-auto px-4 py-12">
         <div className="flex flex-col md:flex-row justify-between items-center">
           {/* Logo and tagline */}
-          <div className="mb-8 md:mb-0">
+          <div className="mb-8 md:mb-0 flex flex-col items-center md:items-start">
             <img 
-              src="/gift-uploads/gift.svg" 
+              src="/favicon.png" 
               alt="TheGiftson Logo" 
-              className="h-16 w-auto mb-4"
+              className="h-32 md:h-40 w-auto mb-4"
             />
             <p className="text-blue-600 font-semibold">innovate. elevate. dominate.</p>
           </div>

@@ -1,16 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Essential Meta Tags -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>giftson-creative-canvas</title>
-    <link rel="icon" href="/gift-uploads/gift.svg" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    
+    <!-- SEO Meta Tags -->
+    <title>Giftson-Dev</title>
+    <meta name="description" content="Discover The Giftson portfolio - Professional gift selection, curation, and personalized services. Find unique, thoughtful gifts for every occasion." />
+    <meta name="keywords" content="gifts, curation, portfolio, professional services, personalized gifts, gift selection" />
+    <meta name="author" content="The Giftson" />
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="color-scheme" content="light dark" />
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Giftson-Dev" />
+    <meta property="og:description" content="Discover The Giftson portfolio - Professional gift selection, curation, and personalized services. Find unique, thoughtful gifts for every occasion." />
+    <meta property="og:url" content="https://thegiftson.com" />
+    <meta property="og:image" content="https://thegiftson.com/favicon.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:site_name" content="Giftson-Dev" />
+    <meta property="og:locale" content="en_US" />
+    
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Giftson-Dev" />
+    <meta name="twitter:description" content="Professional gift selection, curation, and personalized services." />
+    <meta name="twitter:image" content="https://thegiftson.com/favicon.png" />
+    
+    <!-- Favicons & App Icons -->
+    <link rel="icon" href="/favicon.png" type="image/png" />
+    <link rel="apple-touch-icon" href="/favicon.png" />
+    <link rel="manifest" href="/manifest.json" />
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://thegiftson.com" />
+    
+    <!-- Sitemap & Robots -->
+    <link rel="sitemap" href="/sitemap.xml" />
+    
+    <!-- Preconnect to External Resources -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://www.gstatic.com" />
+    
+    <!-- DNS Prefetch -->
+    <link rel="dns-prefetch" href="https://www.google-analytics.com" />
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
   </head>
 
   <body>
     <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-    <script type="module">
+    <script type="module" src="/src/main.tsx" defer></script>
+    <script type="module" defer>
       // Import the functions you need from the SDKs you need
       import { initializeApp } from "https://www.gstatic.com/firebasejs/11.9.1/firebase-app.js";
       import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.9.1/firebase-analytics.js";

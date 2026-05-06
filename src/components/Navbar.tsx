@@ -37,13 +37,16 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex items-center space-x-2">
-            <img 
-              src="/gift-uploads/gift.svg" 
-              alt="TheGiftson Logo" 
-              className="h-8 w-auto"
-            />
-            <span className="text-xl font-bold text-gray-900 dark:text-white">TheGiftson</span>
-          </div>
+              <div className="flex justify-center w-full"> 
+  <img 
+    src="/favicon.png" 
+    alt="The Giftson Logo" 
+    className="h-24 md:h-32 w-auto transition-all duration-300 
+               brightness-0 
+               dark:brightness-0 dark:invert" 
+  />
+</div>
+</div>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
