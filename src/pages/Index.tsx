@@ -10,37 +10,37 @@ import { useSEO, setStructuredData } from "@/hooks/useSEO";
 
 const Index = () => {
   useSEO({
-    title: "Giftson-Dev",
-    description: "Discover The Giftson portfolio - Professional gift selection, curation, and personalized services. Find unique, thoughtful gifts for every occasion.",
-    keywords: "gifts, curation, portfolio, professional services, personalized gifts, gift selection",
-    ogTitle: "Giftson-Dev",
-    ogDescription: "Professional gift selection, curation, and personalized services for every occasion.",
-    ogImage: "https://thegiftson.com/favicon.png",
+    title: "Giftson Ekesa - Portfolio",
+    description: "Discover Giftson Ekesa's portfolio - Professional designer, developer, and tech innovator. Creating beautiful, functional digital experiences.",
+    keywords: "gifts, design, development, portfolio, professional services, digital experiences, Giftson Ekesa",
+    ogTitle: "Giftson Ekesa - Portfolio",
+    ogDescription: "Professional designer and developer creating innovative digital solutions.",
+    ogImage: "https://thegiftson.com/profile-picture.jpg",
     ogUrl: "https://thegiftson.com",
     ogType: "website",
     twitterCard: "summary_large_image",
-    author: "The Giftson",
+    author: "Giftson Ekesa",
     canonical: "https://thegiftson.com"
   });
 
   useEffect(() => {
-    // Set structured data for Organization schema
+    // Set structured data for Person schema
     setStructuredData({
       "@context": "https://schema.org",
-      "@type": "Organization",
-      "name": "The Giftson",
+      "@type": "Person",
+      "name": "Giftson Ekesa",
       "url": "https://thegiftson.com",
-      "logo": "https://thegiftson.com/favicon.png",
-      "description": "Professional gift selection, curation, and personalized services",
+      "image": "https://thegiftson.com/profile-picture.jpg",
+      "description": "Professional designer, developer, and tech innovator",
       "sameAs": [
         "https://www.facebook.com/thegiftson",
         "https://www.twitter.com/thegiftson",
         "https://www.instagram.com/thegiftson",
-        "https://www.linkedin.com/company/thegiftson"
+        "https://www.linkedin.com/in/giftson-ekesa"
       ],
       "contactPoint": {
         "@type": "ContactPoint",
-        "contactType": "Customer Service",
+        "contactType": "Professional",
         "email": "contact@thegiftson.com"
       }
     });

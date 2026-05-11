@@ -60,7 +60,7 @@ const Footer = () => {
         {/* Copyright */}
         <div className="border-t border-gray-200 mt-8 pt-8 text-center">
           <p className="text-gray-600">
-            © 2025 TheGiftson. All Rights Reserved.
+            © 2026 TheGiftson. All Rights Reserved.
           </p>
         </div>
       </div>

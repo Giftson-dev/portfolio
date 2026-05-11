@@ -34,31 +34,32 @@ const Hero = () => {
         <Zap className="absolute bottom-48 left-32 h-7 w-7 text-cyan-300 dark:text-cyan-500 opacity-40 animate-pulse" style={{ animationDelay: '5s' }} />
       </div>
       
-      <div className="relative z-10 text-center max-w-4xl mx-auto">
-        {/* Logo with cool background effect */}
-        <div className="mb-8 animate-fade-in relative">
-          <div className="absolute inset-0 bg-gradient-to-r from-blue-600 via-purple-600 to-cyan-600 rounded-full blur-3xl opacity-30 scale-150 animate-pulse"></div>
-          <div className="relative backdrop-blur-sm rounded-full p-6 border border-white/20 dark:border-gray-600/20 shadow-2xl">
- <div className="flex justify-center w-full"> 
-  <img 
-    src="/favicon.png" 
-    alt="The Giftson Logo" 
-    className="h-32 md:h-48 w-auto transition-all duration-300 
-               brightness-0 
-               dark:brightness-0 dark:invert" 
-  />
-</div>
+      <div className="relative z-10 max-w-6xl mx-auto px-4">
+        {/* Profile Picture and Name Row */}
+        <div className="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-12 mb-8">
+          {/* Profile Picture */}
+          <div className="animate-fade-in relative">
+            <div className="absolute inset-0 bg-gradient-to-r from-blue-600 via-purple-600 to-cyan-600 rounded-full blur-3xl opacity-30 scale-150 animate-pulse"></div>
+            <div className="relative backdrop-blur-sm rounded-full p-3 border-2 border-gradient-to-r from-blue-400/50 via-purple-400/50 to-cyan-400/50 shadow-2xl bg-gradient-to-br from-blue-500/20 via-purple-500/20 to-cyan-500/20 dark:from-blue-600/30 dark:via-purple-600/30 dark:to-cyan-600/30">
+              <img 
+                src="/profile-picture.jpg" 
+                alt="Giftson Ekesa Profile Picture" 
+                className="h-32 w-32 md:h-40 md:w-40 rounded-full object-cover transition-all duration-300 ring-4 ring-white/20 dark:ring-gray-600/20 mix-blend-multiply" 
+              />
+            </div>
+          </div>
+
+          {/* Name */}
+          <div className="text-center md:text-left animate-fade-in" style={{ animationDelay: "0.1s" }}>
+            <h1 className="text-5xl md:text-7xl font-bold bg-gradient-to-r from-gray-900 via-blue-800 to-gray-900 dark:from-gray-100 dark:via-blue-400 dark:to-gray-100 bg-clip-text text-transparent">
+              Giftson Ekesa
+            </h1>
           </div>
         </div>
 
-        {/* Company Name */}
-        <h1 className="text-5xl md:text-7xl font-bold bg-gradient-to-r from-gray-900 via-blue-800 to-gray-900 dark:from-gray-100 dark:via-blue-400 dark:to-gray-100 bg-clip-text text-transparent mb-4 animate-fade-in" style={{ animationDelay: "0.1s" }}>
-          TheGiftson
-        </h1>
-
         {/* Main tagline */}
         <h2 className="text-3xl md:text-5xl font-bold bg-gradient-to-r from-blue-600 via-purple-600 to-blue-600 dark:from-blue-400 dark:via-purple-400 dark:to-blue-400 bg-clip-text text-transparent mb-4 animate-fade-in" style={{ animationDelay: "0.2s" }}>
-          innovate. elevate. dominate.
+          Crafting Digital Experiences
         </h2>
 
         {/* Subheadline */}
@@ -80,11 +81,6 @@ const Hero = () => {
           >
             Discover My Work
           </Button>
-        </div>
-
-        {/* Scroll indicator */}
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-          <ArrowDown className="h-6 w-6 text-blue-600 dark:text-blue-400" />
         </div>
       </div>
     </section>
