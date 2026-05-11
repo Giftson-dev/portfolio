@@ -1,4 +1,4 @@
-# Giftson Creative Canvas
+# Giftson Portfolio
 
 ## Getting Started
 
