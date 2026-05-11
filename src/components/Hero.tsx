@@ -34,9 +34,9 @@ const Hero = () => {
         <Zap className="absolute bottom-48 left-32 h-7 w-7 text-cyan-300 dark:text-cyan-500 opacity-40 animate-pulse" style={{ animationDelay: '5s' }} />
       </div>
       
-      <div className="relative z-10 max-w-6xl mx-auto px-4">
+      <div className="relative z-10 max-w-6xl mx-auto px-4 flex flex-col items-center justify-center h-full">
         {/* Profile Picture and Name Row */}
-        <div className="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-12 mb-8">
+        <div className="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-12 mb-16">
           {/* Profile Picture */}
           <div className="animate-fade-in relative">
             <div className="absolute inset-0 bg-gradient-to-r from-blue-600 via-purple-600 to-cyan-600 rounded-full blur-3xl opacity-30 scale-150 animate-pulse"></div>
@@ -58,22 +58,17 @@ const Hero = () => {
         </div>
 
         {/* Main tagline */}
-        <h2 className="text-3xl md:text-5xl font-bold bg-gradient-to-r from-blue-600 via-purple-600 to-blue-600 dark:from-blue-400 dark:via-purple-400 dark:to-blue-400 bg-clip-text text-transparent mb-4 animate-fade-in" style={{ animationDelay: "0.2s" }}>
+        <h2 className="text-3xl md:text-5xl font-bold bg-gradient-to-r from-blue-600 via-purple-600 to-blue-600 dark:from-blue-400 dark:via-purple-400 dark:to-blue-400 bg-clip-text text-transparent mb-8 text-center animate-fade-in max-w-4xl" style={{ animationDelay: "0.2s" }}>
           Crafting Digital Experiences
         </h2>
 
         {/* Subheadline */}
-        <p className="text-xl md:text-2xl text-gray-700 dark:text-gray-300 mb-8 animate-fade-in" style={{ animationDelay: "0.4s" }}>
-          Blending design, programming, and tech innovation to shape better digital experiences.
-        </p>
-
-        {/* Enhanced description */}
-        <p className="text-lg text-gray-600 dark:text-gray-400 mb-8 max-w-2xl mx-auto animate-fade-in" style={{ animationDelay: "0.5s" }}>
-          From stunning visual designs to full-stack development, I create solutions that are both beautiful and functional.
+        <p className="text-lg md:text-xl text-gray-700 dark:text-gray-300 mb-12 text-center max-w-3xl animate-fade-in" style={{ animationDelay: "0.4s" }}>
+          Blending design, programming, and tech innovation to create beautiful, functional digital solutions.
         </p>
 
         {/* CTA Button */}
-        <div className="animate-fade-in" style={{ animationDelay: "0.6s" }}>
+        <div className="animate-fade-in" style={{ animationDelay: "0.5s" }}>
           <Button 
             onClick={() => scrollToSection("services")}
             size="lg"
@@ -81,6 +76,14 @@ const Hero = () => {
           >
             Discover My Work
           </Button>
+        </div>
+
+        {/* Scroll indicator with meaning */}
+        <div className="absolute bottom-12 left-1/2 transform -translate-x-1/2 animate-bounce">
+          <div className="flex flex-col items-center gap-3 animate-fade-in" style={{ animationDelay: "0.7s" }}>
+            <p className="text-sm text-gray-600 dark:text-gray-400 font-medium">Explore More</p>
+            <ArrowDown className="h-6 w-6 text-blue-600 dark:text-blue-400" />
+          </div>
         </div>
       </div>
     </section>
