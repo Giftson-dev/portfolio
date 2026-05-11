@@ -15,7 +15,8 @@ import {
   MapPin,
   Mail,
   Phone,
-  Instagram
+  Instagram,
+  Github
 } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
 
@@ -79,6 +80,10 @@ const Contact = () => {
 
   const handleInstagram = () => {
     window.open("https://instagram.com/thegiftson", "_blank");
+  };
+
+  const handleGitHub = () => {
+    window.open("https://github.com/Giftson-dev", "_blank");
   };
 
   return (
@@ -191,6 +196,14 @@ const Contact = () => {
                   >
                     <Instagram className="h-5 w-5" />
                     <span>Instagram</span>
+                  </Button>
+
+                  <Button
+                    onClick={handleGitHub}
+                    className="bg-gray-800 hover:bg-gray-900 text-white px-6 py-3 rounded-lg flex items-center space-x-2"
+                  >
+                    <Github className="h-5 w-5" />
+                    <span>GitHub</span>
                   </Button>
                 </div>
               </div>
