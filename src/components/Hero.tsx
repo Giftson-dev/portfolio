@@ -59,7 +59,7 @@ const Hero = () => {
 
         {/* Main tagline */}
         <h2 className="text-3xl md:text-5xl font-bold bg-gradient-to-r from-blue-600 via-purple-600 to-blue-600 dark:from-blue-400 dark:via-purple-400 dark:to-blue-400 bg-clip-text text-transparent mb-8 text-center animate-fade-in max-w-4xl" style={{ animationDelay: "0.2s" }}>
-          Digital Innovation
+          Innovate &#46; Elevate &#46; Elevate &#46;
         </h2>
 
         {/* Subheadline */}
